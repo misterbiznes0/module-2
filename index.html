@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Онлайн-обучение</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Платформа онлайн-обучения</h1>
+
+    <div class="auth">
+      <h2>Регистрация / Вход</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Пароль">
+      <button onclick="register()">Зарегистрироваться</button>
+      <button onclick="login()">Войти</button>
+      <p id="auth-msg"></p>
+    </div>
+
+    <div class="courses">
+      <h2>Курсы</h2>
+      <input type="text" id="course-title" placeholder="Название курса">
+      <button onclick="addCourse()">Добавить курс</button>
+      <ul id="course-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
